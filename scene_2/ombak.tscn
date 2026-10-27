@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://besk23oabjsp0"]
+
+[ext_resource type="Texture2D" uid="uid://ci0sr1p3jdd1g" path="res://assets/Objek/Ombak.png" id="1_76yd7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76yd7"]
+atlas = ExtResource("1_76yd7")
+region = Rect2(0, 0, 160, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6vwr"]
+atlas = ExtResource("1_76yd7")
+region = Rect2(160, 0, 160, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gyjo"]
+atlas = ExtResource("1_76yd7")
+region = Rect2(320, 0, 160, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvfs6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76yd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6vwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gyjo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Ombak" type="AnimatedSprite2D" unique_id=237778654]
+sprite_frames = SubResource("SpriteFrames_qvfs6")
+frame_progress = 0.4146808

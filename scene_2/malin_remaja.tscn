@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ddsh3ihn2y4oo"]
+
+[ext_resource type="Texture2D" uid="uid://dbpi882dm11o0" path="res://assets/Objek/scene_2/Gemini_Generated_Image_mqc7wlmqc7wlmqc7-removebg-preview.png" id="1_ogs30"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73e1v"]
+atlas = ExtResource("1_ogs30")
+region = Rect2(0, 0, 250, 249)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdopf"]
+atlas = ExtResource("1_ogs30")
+region = Rect2(250, 0, 250, 249)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxa30"]
+atlas = ExtResource("1_ogs30")
+region = Rect2(500, 0, 250, 249)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d3js"]
+atlas = ExtResource("1_ogs30")
+region = Rect2(750, 0, 250, 249)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvfs6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73e1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdopf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxa30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d3js")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3jj0"]
+size = Vector2(7, 32)
+
+[node name="malin_remaja" type="CharacterBody2D" unique_id=217989011]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2028197558]
+position = Vector2(11.353913, -20.3125)
+scale = Vector2(0.16616467, 0.16616465)
+sprite_frames = SubResource("SpriteFrames_qvfs6")
+autoplay = "default"
+frame_progress = 0.31587264
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1661170715]
+position = Vector2(10.5, -20)
+shape = SubResource("RectangleShape2D_k3jj0")

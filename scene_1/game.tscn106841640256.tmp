@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://2bu2mp7dc4yp"]
+
+[ext_resource type="Script" uid="uid://djovd4c8jmk7e" path="res://scenes/game.gd" id="1_iywne"]
+[ext_resource type="PackedScene" uid="uid://dyttp041b6quv" path="res://scenes/player.tscn" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://cv73x3htxk6oq" path="res://scenes/player.gd" id="2_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://dhp5rx0rpk1ni" path="res://assets/Objek/Jendela.png" id="2_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://vln786gcbv5" path="res://scenes/ibu.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://s0lmdpvh11mi" path="res://scenes/malin_kecil.tscn" id="5_0tnpc"]
+[ext_resource type="Script" uid="uid://dpr2w14b0n1yn" path="res://scenes/tappable.gd" id="6_0tnpc"]
+[ext_resource type="Texture2D" uid="uid://rfr0wr2ush1w" path="res://assets/Visual Novel Char/Gemini_Generated_Image_ya4ulaya4ulaya4u-removebg-preview.png" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://b5g5qcyn7qlcr" path="res://scenes/Tungku.tscn" id="8_gee14"]
+
+[node name="Game" type="Node2D" unique_id=1657725823]
+script = ExtResource("1_iywne")
+
+[node name="Jendela" type="Sprite2D" parent="." unique_id=619799414]
+position = Vector2(330, 433)
+texture = ExtResource("2_u5sy4")
+
+[node name="Tanah" type="ColorRect" parent="." unique_id=889733466]
+visible = false
+offset_top = 500.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.56078434, 0.33333334, 0.2784314, 1)
+
+[node name="Player" parent="." unique_id=1529534192 instance=ExtResource("1_yqjtg")]
+position = Vector2(295, 505)
+script = ExtResource("2_lnu2h")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1077327505]
+position = Vector2(12, -52)
+zoom = Vector2(5, 5)
+limit_left = 161
+limit_top = 359
+limit_right = 499
+limit_bottom = 515
+
+[node name="Malin Kecil" parent="." unique_id=435732080 instance=ExtResource("5_0tnpc")]
+position = Vector2(387, 507)
+input_pickable = true
+script = ExtResource("6_0tnpc")
+
+[node name="Ibu" parent="." unique_id=615855255 instance=ExtResource("3_lnu2h")]
+position = Vector2(395, 505)
+script = ExtResource("6_0tnpc")
+
+[node name="Dialog" type="CanvasLayer" parent="Ibu" unique_id=192364419]
+visible = false
+
+[node name="KotakDialog" type="Control" parent="Ibu/Dialog" unique_id=1332585760]
+unique_name_in_owner = true
+layout_mode = 3
+anchor_left = -0.09288195
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 107.0
+offset_top = -8.0
+offset_right = 107.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Potret" type="TextureRect" parent="Ibu/Dialog/KotakDialog" unique_id=1889288611]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+offset_transform_enabled = true
+offset_transform_position = Vector2(20.27, 520)
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Gambar Ibu" type="Sprite2D" parent="Ibu/Dialog/KotakDialog/Potret" unique_id=624295950]
+position = Vector2(547, -178)
+texture = ExtResource("6_p57ef")
+
+[node name="Kotak" type="Panel" parent="Ibu/Dialog/KotakDialog" unique_id=1767269544]
+layout_mode = 0
+offset_top = 379.0
+offset_right = 1155.0
+offset_bottom = 647.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Teks" type="Label" parent="Ibu/Dialog/KotakDialog/Kotak" unique_id=55302202]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 157.0
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Tungku" parent="." unique_id=1784240796 instance=ExtResource("8_gee14")]
+position = Vector2(194, 481)
+frame_progress = 0.85061777
+script = ExtResource("6_0tnpc")

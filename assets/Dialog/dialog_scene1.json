@@ -1,0 +1,37 @@
+{
+    "intro": [
+        {
+            "speaker": "Narator",
+            "text": "Pada sebuah masa, hiduplah seorang ibu yang penyayang bersama putranya yang bernama Malin.",
+            "potret": ""
+        },
+        {
+            "speaker": "Narator",
+            "text": "Saat itu Malin kecil sedang berbincang dengan ibunya di dalam rumah. Dia sedang membantu ibunya membakar kayu untuk memasak makanan.",
+            "potret": ""
+        },
+        {
+            "speaker": "Narator",
+            "text": "Dari percakapan mereka, terlihat bahwa Malin adalah anak yang polos, baik hati, dan sangat menyayangi ibunya.",
+            "potret": ""
+        }
+    ],
+
+    "percakapan": [
+        { "speaker": "Ibu",   "text": "Malin, apinya sudah kamu nyalakan, Nak?", "potret": "ibu" },
+        { "speaker": "Malin", "text": "Sudah, Bu. Baru aja aku nyalain, udah besar aja apinya!", "potret": "malin" },
+        { "speaker": "Ibu",   "text": "Hahaha... hebat anak Ibu.", "potret": "ibu" },
+        { "speaker": "Ibu",   "text": "Yaudah, sana pergi main sama teman-temanmu.", "potret": "ibu" },
+        { "speaker": "Malin", "text": "Duhhh, aku kan pengennya ngebantu Ibu nyiapin makanan.", "potret": "malin" },
+        { "speaker": "Ibu",   "text": "Sudahlah, Malin sayang. Kamu kan dari tadi sudah bantu Ibu nyapu rumah. Emangnya kamu nggak bosen diam di rumah terus?", "potret": "ibu" },
+        { "speaker": "Malin", "text": "Nggak dong! Selama bisa ngebantu Ibu, aku nggak akan pernah bosan.", "potret": "malin" }
+    ],
+
+    "tungku": [
+        {
+            "speaker": "Narator",
+            "text": "Tungku yang baru saja terbakar. Walaupun terlihat berantakan, ini adalah bukti dari kasih sayang seorang anak kepada ibunya.",
+            "potret": ""
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+  "scene_id": "scene_2",
+  "story": "malin_kundang",
+  "title": "Doa dan Perpisahan",
+  "setting": "Pantai sore hari saat matahari terbenam",
+  "characters": {
+    "malin": { "name": "Malin", "portrait_folder": "portraits/malin_remaja" },
+    "ibu": { "name": "Ibu", "portrait_folder": "portraits/ibu" }
+  },
+  "audio": {
+    "bgm": "audio/bgm/pantai_sore.ogg",
+    "ambient": ["audio/sfx/ombak.ogg", "audio/sfx/camar.ogg"]
+  },
+  "narrator_intro": {
+    "voice": "audio/voice/s2_narator_intro.ogg",
+    "text": "Bertahun-tahun berlalu. Malin kecil kini tumbuh menjadi seorang pemuda. Namun desa nelayan yang sepi tak lagi cukup untuk mimpinya. Di sore yang berwarna jingga, di tepi pantai, ia memutuskan untuk pergi."
+  },
+  "dialogue": [
+    {
+      "id": "s2_01",
+      "speaker": "malin",
+      "expression": "semangat",
+      "text": "Ibu, aku sudah memikirkan ini berkali-kali. Aku ingin pergi merantau.",
+      "voice": "audio/voice/s2_01.ogg"
+    },
+    {
+      "id": "s2_02",
+      "speaker": "ibu",
+      "expression": "kaget",
+      "text": "Merantau, Nak? Sejauh apa kamu akan pergi?",
+      "voice": "audio/voice/s2_02.ogg"
+    },
+    {
+      "id": "s2_03",
+      "speaker": "malin",
+      "expression": "semangat",
+      "text": "Jauh, Bu. Ke seberang lautan. Di desa ini aku tak bisa berbuat apa-apa. Setiap hari hidup kita sama saja.",
+      "voice": "audio/voice/s2_03.ogg"
+    },
+    {
+      "id": "s2_04",
+      "speaker": "ibu",
+      "expression": "sedih",
+      "text": "Ibu tahu kamu anak yang pintar dan punya cita-cita besar. Tapi laut itu luas, Nak. Ibu takut kamu kenapa-kenapa di sana.",
+      "voice": "audio/voice/s2_04.ogg"
+    },
+    {
+      "id": "s2_05",
+      "speaker": "malin",
+      "expression": "yakin",
+      "text": "Ibu jangan khawatir. Aku akan bekerja keras. Kalau aku sudah berhasil, aku akan pulang dan hidup Ibu tidak akan susah lagi.",
+      "voice": "audio/voice/s2_05.ogg"
+    },
+    {
+      "id": "s2_06",
+      "speaker": "ibu",
+      "expression": "sedih",
+      "text": "(menghela napas) Kalau memang itu tekadmu, Ibu tidak akan menahanmu. Tapi berjanjilah satu hal.",
+      "voice": "audio/voice/s2_06.ogg"
+    },
+    {
+      "id": "s2_07",
+      "speaker": "malin",
+      "expression": "bertanya",
+      "text": "Apa itu, Bu?",
+      "voice": "audio/voice/s2_07.ogg"
+    },
+    {
+      "id": "s2_08",
+      "speaker": "ibu",
+      "expression": "sedih",
+      "text": "Jangan pernah lupa pada tanah kelahiranmu. Dan jangan pernah lupa pada Ibu.",
+      "voice": "audio/voice/s2_08.ogg"
+    },
+    {
+      "id": "s2_09",
+      "speaker": "malin",
+      "expression": "haru",
+      "text": "Aku janji, Bu. Aku pasti pulang.",
+      "voice": "audio/voice/s2_09.ogg"
+    },
+    {
+      "id": "s2_10",
+      "speaker": "ibu",
+      "expression": "tersenyum_haru",
+      "text": "Kemarilah, Nak. Biar Ibu doakan dulu sebelum kamu berangkat.",
+      "voice": "audio/voice/s2_10.ogg"
+    },
+    {
+      "id": "s2_11",
+      "speaker": "ibu",
+      "expression": "tersenyum_haru",
+      "text": "Ya Tuhan, lindungilah anakku di lautan yang luas. Jagalah langkahnya, mudahkan rezekinya, dan pulangkan ia dengan selamat.",
+      "voice": "audio/voice/s2_11.ogg",
+      "audio_cue": "turunkan_volume_bgm_dan_ombak"
+    },
+    {
+      "id": "s2_12",
+      "speaker": "malin",
+      "expression": "haru",
+      "text": "Terima kasih, Bu. Doakan aku selalu. Aku berangkat sekarang.",
+      "voice": "audio/voice/s2_12.ogg",
+      "audio_cue": "naikkan_volume_bgm_dan_ombak"
+    },
+    {
+      "id": "s2_13",
+      "speaker": "ibu",
+      "expression": "melambai",
+      "text": "Hati-hati, Nak. Ibu menunggumu di sini.",
+      "voice": "audio/voice/s2_13.ogg"
+    }
+  ],
+  "narrator_outro": {
+    "voice": "audio/voice/s2_narator_outro.ogg",
+    "text": "Layar kapal mengembang, membawa Malin menjauh dari tepian. Sang Ibu berdiri lama di dermaga kayu, menatap hingga kapal itu hilang di ujung cakrawala. Bertahun-tahun kemudian, sebuah kapal megah akhirnya tampak mendekat ke pantai itu.",
+    "next_scene": "scene_3"
+  }
+}

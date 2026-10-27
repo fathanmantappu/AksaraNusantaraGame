@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://d4gov11l24j2l"]
+
+[ext_resource type="Texture2D" uid="uid://cvspo0w6fuqvj" path="res://assets/Objek/Kapal Laut.png" id="1_iqpnf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy0ag"]
+atlas = ExtResource("1_iqpnf")
+region = Rect2(0, 0, 304, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp7jl"]
+atlas = ExtResource("1_iqpnf")
+region = Rect2(304, 0, 304, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7c2mh"]
+atlas = ExtResource("1_iqpnf")
+region = Rect2(608, 0, 304, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ur5t"]
+atlas = ExtResource("1_iqpnf")
+region = Rect2(912, 0, 304, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvfs6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qy0ag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mp7jl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7c2mh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ur5t")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=651425250]
+sprite_frames = SubResource("SpriteFrames_qvfs6")
+frame_progress = 0.41155288

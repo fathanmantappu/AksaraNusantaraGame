@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://iry2osr8ujuh"]
+
+[ext_resource type="Texture2D" uid="uid://daj8s8xfmdmun" path="res://assets/Objek/BurungCamar.png" id="1_8cl11"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60sgs"]
+atlas = ExtResource("1_8cl11")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vi77"]
+atlas = ExtResource("1_8cl11")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rqnw"]
+atlas = ExtResource("1_8cl11")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aie4w"]
+atlas = ExtResource("1_8cl11")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvfs6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60sgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vi77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rqnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aie4w")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Burung camar" type="AnimatedSprite2D" unique_id=534935958]
+position = Vector2(3, -16)
+sprite_frames = SubResource("SpriteFrames_qvfs6")
+frame_progress = 0.85762346

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b5g5qcyn7qlcr"]
+
+[ext_resource type="Texture2D" uid="uid://bi1fa6ha2rfko" path="res://assets/Objek/Tungku Fix.png" id="1_bty4i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8iv7"]
+atlas = ExtResource("1_bty4i")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la14w"]
+atlas = ExtResource("1_bty4i")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44i2n"]
+atlas = ExtResource("1_bty4i")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vr030"]
+atlas = ExtResource("1_bty4i")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvfs6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8iv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_la14w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44i2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vr030")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qvfs6"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1784240796]
+position = Vector2(34, -33)
+sprite_frames = SubResource("SpriteFrames_qvfs6")
+autoplay = "default"
+frame_progress = 0.21217647
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=383328784]
+position = Vector2(-23, 20)
+shape = SubResource("CircleShape2D_qvfs6")

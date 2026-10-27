@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://2bu2mp7dc4yp"]
+
+[ext_resource type="Script" uid="uid://djovd4c8jmk7e" path="res://scene_1/game.gd" id="1_iywne"]
+[ext_resource type="PackedScene" uid="uid://dyttp041b6quv" path="res://shared/player.tscn" id="1_yqjtg"]
+[ext_resource type="AudioStream" uid="uid://2v2g7oro4jw7" path="res://assets/Audio/Talempong dan Saluang Minang Baralek Gadang-Musik Instrument Sumatera Barat @gendingmw (1).ogg" id="2_dinhu"]
+[ext_resource type="Script" uid="uid://cv73x3htxk6oq" path="res://shared/player.gd" id="2_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://dhp5rx0rpk1ni" path="res://assets/Objek/scene_1/Jendela.png" id="2_u5sy4"]
+[ext_resource type="AudioStream" uid="uid://bt7y6n70jt4xo" path="res://assets/Audio/Suara API UNGGUN Perkemahan Full HD - Sound Effect Campfire (No Copyright).ogg" id="3_kvuet"]
+[ext_resource type="PackedScene" uid="uid://vln786gcbv5" path="res://shared/ibu.tscn" id="3_lnu2h"]
+[ext_resource type="AudioStream" uid="uid://b744qnrhhj2hs" path="res://assets/Audio/Suara burung di pagi hari (free backsound).ogg" id="4_trtic"]
+[ext_resource type="PackedScene" uid="uid://s0lmdpvh11mi" path="res://scene_1/malin_kecil.tscn" id="5_0tnpc"]
+[ext_resource type="Script" uid="uid://dpr2w14b0n1yn" path="res://shared/tappable.gd" id="6_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://b5g5qcyn7qlcr" path="res://scene_1/Tungku.tscn" id="8_gee14"]
+
+[node name="Scene 1" type="Node2D" unique_id=1657725823]
+script = ExtResource("1_iywne")
+musik_latar = ExtResource("2_dinhu")
+suara_api = ExtResource("3_kvuet")
+suara_burung = ExtResource("4_trtic")
+
+[node name="Jendela" type="Sprite2D" parent="." unique_id=619799414]
+position = Vector2(330, 433)
+texture = ExtResource("2_u5sy4")
+
+[node name="Tungku" parent="." unique_id=1784240796 instance=ExtResource("8_gee14")]
+position = Vector2(194, 481)
+frame_progress = 0.85061777
+script = ExtResource("6_0tnpc")
+kunci_dialog = "tungku"
+skala_area = 0.75
+
+[node name="Ibu" parent="." unique_id=615855255 instance=ExtResource("3_lnu2h")]
+position = Vector2(395, 505)
+script = ExtResource("6_0tnpc")
+kunci_dialog = "percakapan"
+
+[node name="Malin Kecil" parent="." unique_id=435732080 instance=ExtResource("5_0tnpc")]
+position = Vector2(387, 507)
+input_pickable = true
+script = ExtResource("6_0tnpc")
+kunci_dialog = "percakapan"
+
+[node name="Player" parent="." unique_id=1529534192 instance=ExtResource("1_yqjtg")]
+position = Vector2(295, 505)
+script = ExtResource("2_lnu2h")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1077327505]
+position = Vector2(12, -52)
+zoom = Vector2(5, 5)
+limit_left = 161
+limit_top = 359
+limit_right = 499
+limit_bottom = 515
+
+[node name="Dialog" type="CanvasLayer" parent="." unique_id=192364419]
+
+[node name="KotakDialog" type="Control" parent="Dialog" unique_id=1332585760]
+unique_name_in_owner = true
+layout_mode = 3
+anchor_left = -0.09288195
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 107.0
+offset_top = -8.0
+offset_right = 107.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Potret" type="TextureRect" parent="Dialog/KotakDialog" unique_id=1889288611]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+offset_transform_enabled = true
+offset_transform_position = Vector2(20.27, 520)
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Gambar Ibu" type="Sprite2D" parent="Dialog/KotakDialog/Potret" unique_id=624295950]
+position = Vector2(547, -178)
+
+[node name="Kotak" type="Panel" parent="Dialog/KotakDialog" unique_id=1767269544]
+layout_mode = 0
+offset_top = 379.0
+offset_right = 1155.0
+offset_bottom = 647.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Teks" type="Label" parent="Dialog/KotakDialog/Kotak" unique_id=55302202]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 157.0
+theme_override_font_sizes/font_size = 35
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true

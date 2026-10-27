@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cnxv0iyucg37y"]
+
+[ext_resource type="Texture2D" uid="uid://bsxugqwqsv3an" path="res://assets/Objek/scene_2/pantai.png" id="1_02v7m"]
+[ext_resource type="PackedScene" uid="uid://besk23oabjsp0" path="res://scene_2/ombak.tscn" id="2_mejfh"]
+[ext_resource type="Texture2D" uid="uid://cas07thvi2koh" path="res://assets/Objek/scene_2/dermaga.png" id="3_ccscm"]
+[ext_resource type="PackedScene" uid="uid://d4gov11l24j2l" path="res://scene_2/KapalLaut.tscn" id="3_fw7yf"]
+[ext_resource type="PackedScene" uid="uid://iry2osr8ujuh" path="res://scene_2/burung_camar.tscn" id="5_164hk"]
+[ext_resource type="PackedScene" uid="uid://ddsh3ihn2y4oo" path="res://scene_2/malin_remaja.tscn" id="6_hhi3k"]
+[ext_resource type="PackedScene" uid="uid://vln786gcbv5" path="res://shared/ibu.tscn" id="7_3yivd"]
+[ext_resource type="PackedScene" uid="uid://dyttp041b6quv" path="res://shared/player.tscn" id="8_sey7p"]
+
+[node name="Scene 2" type="Node2D" unique_id=1979054746]
+
+[node name="Pantai" type="Sprite2D" parent="." unique_id=1856921263]
+position = Vector2(270, 571)
+texture = ExtResource("1_02v7m")
+
+[node name="Ombak" parent="Pantai" unique_id=237778654 instance=ExtResource("2_mejfh")]
+position = Vector2(78, 65)
+autoplay = "default"
+frame_progress = 0.85591775
+
+[node name="AnimatedSprite2D" parent="Pantai" unique_id=651425250 instance=ExtResource("3_fw7yf")]
+position = Vector2(99, 0)
+autoplay = "default"
+frame_progress = 0.46299893
+
+[node name="Dermaga" type="Sprite2D" parent="Pantai" unique_id=1516375883]
+position = Vector2(-56, 0)
+texture = ExtResource("3_ccscm")
+
+[node name="Burung camar" parent="Pantai" unique_id=534935958 instance=ExtResource("5_164hk")]
+position = Vector2(-45.000004, 31.000025)
+scale = Vector2(0.5312488, 0.55092466)
+autoplay = "default"
+frame_progress = 0.84899795
+
+[node name="Burung camar" parent="Pantai/Burung camar" unique_id=1084407809 instance=ExtResource("5_164hk")]
+position = Vector2(35.764786, 21.781612)
+scale = Vector2(1.0124087, 1.0499053)
+autoplay = "default"
+frame_progress = 0.84899795
+
+[node name="malin_remaja" parent="." unique_id=217989011 instance=ExtResource("6_hhi3k")]
+position = Vector2(328, 627)
+
+[node name="Ibu" parent="." unique_id=615855255 instance=ExtResource("7_3yivd")]
+position = Vector2(307, 626)
+
+[node name="CharacterBody2D" parent="." unique_id=674275362 instance=ExtResource("8_sey7p")]
+position = Vector2(55, 627)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1329646947]
+position = Vector2(10, -21)
+zoom = Vector2(5, 5)
+limit_left = 0
+limit_top = 495
+limit_right = 491
+limit_bottom = 651
