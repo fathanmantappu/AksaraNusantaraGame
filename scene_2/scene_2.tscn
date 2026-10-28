@@ -1,59 +1,120 @@
 [gd_scene format=3 uid="uid://cnxv0iyucg37y"]
 
-[ext_resource type="Texture2D" uid="uid://bsxugqwqsv3an" path="res://assets/Objek/scene_2/pantai.png" id="1_02v7m"]
-[ext_resource type="PackedScene" uid="uid://besk23oabjsp0" path="res://scene_2/ombak.tscn" id="2_mejfh"]
-[ext_resource type="Texture2D" uid="uid://cas07thvi2koh" path="res://assets/Objek/scene_2/dermaga.png" id="3_ccscm"]
-[ext_resource type="PackedScene" uid="uid://d4gov11l24j2l" path="res://scene_2/KapalLaut.tscn" id="3_fw7yf"]
-[ext_resource type="PackedScene" uid="uid://iry2osr8ujuh" path="res://scene_2/burung_camar.tscn" id="5_164hk"]
-[ext_resource type="PackedScene" uid="uid://ddsh3ihn2y4oo" path="res://scene_2/malin_remaja.tscn" id="6_hhi3k"]
-[ext_resource type="PackedScene" uid="uid://vln786gcbv5" path="res://shared/ibu.tscn" id="7_3yivd"]
-[ext_resource type="PackedScene" uid="uid://dyttp041b6quv" path="res://shared/player.tscn" id="8_sey7p"]
+[ext_resource type="Script" uid="uid://bkr6xa0eif153" path="res://scene_2/scene_2.gd" id="1_4q44e"]
+[ext_resource type="Texture2D" uid="uid://bsxugqwqsv3an" path="res://assets/Objek/scene_2/pantai.png" id="1_q17vi"]
+[ext_resource type="PackedScene" uid="uid://besk23oabjsp0" path="res://scene_2/ombak.tscn" id="2_7ay5a"]
+[ext_resource type="PackedScene" uid="uid://d4gov11l24j2l" path="res://scene_2/KapalLaut.tscn" id="3_2peiq"]
+[ext_resource type="Texture2D" uid="uid://cas07thvi2koh" path="res://assets/Objek/scene_2/dermaga.png" id="4_4q44e"]
+[ext_resource type="PackedScene" uid="uid://iry2osr8ujuh" path="res://scene_2/burung_camar.tscn" id="5_eu42w"]
+[ext_resource type="PackedScene" uid="uid://ddsh3ihn2y4oo" path="res://scene_2/malin_remaja.tscn" id="6_6p86r"]
+[ext_resource type="PackedScene" uid="uid://vln786gcbv5" path="res://shared/ibu.tscn" id="7_qut3p"]
+[ext_resource type="PackedScene" uid="uid://dyttp041b6quv" path="res://shared/player.tscn" id="8_887gb"]
+[ext_resource type="Script" uid="uid://dpr2w14b0n1yn" path="res://shared/tappable.gd" id="8_eu42w"]
+[ext_resource type="Script" uid="uid://cv73x3htxk6oq" path="res://shared/player.gd" id="11_6p86r"]
 
 [node name="Scene 2" type="Node2D" unique_id=1979054746]
+script = ExtResource("1_4q44e")
 
 [node name="Pantai" type="Sprite2D" parent="." unique_id=1856921263]
-position = Vector2(270, 571)
-texture = ExtResource("1_02v7m")
+position = Vector2(454, 440)
+texture = ExtResource("1_q17vi")
 
-[node name="Ombak" parent="Pantai" unique_id=237778654 instance=ExtResource("2_mejfh")]
+[node name="Ombak" parent="Pantai" unique_id=237778654 instance=ExtResource("2_7ay5a")]
 position = Vector2(78, 65)
 autoplay = "default"
 frame_progress = 0.85591775
 
-[node name="AnimatedSprite2D" parent="Pantai" unique_id=651425250 instance=ExtResource("3_fw7yf")]
+[node name="AnimatedSprite2D" parent="Pantai" unique_id=651425250 instance=ExtResource("3_2peiq")]
 position = Vector2(99, 0)
 autoplay = "default"
 frame_progress = 0.46299893
 
 [node name="Dermaga" type="Sprite2D" parent="Pantai" unique_id=1516375883]
 position = Vector2(-56, 0)
-texture = ExtResource("3_ccscm")
+texture = ExtResource("4_4q44e")
 
-[node name="Burung camar" parent="Pantai" unique_id=534935958 instance=ExtResource("5_164hk")]
+[node name="Burung camar" parent="Pantai" unique_id=534935958 instance=ExtResource("5_eu42w")]
 position = Vector2(-45.000004, 31.000025)
 scale = Vector2(0.5312488, 0.55092466)
 autoplay = "default"
 frame_progress = 0.84899795
 
-[node name="Burung camar" parent="Pantai/Burung camar" unique_id=1084407809 instance=ExtResource("5_164hk")]
+[node name="Burung camar" parent="Pantai/Burung camar" unique_id=1084407809 instance=ExtResource("5_eu42w")]
 position = Vector2(35.764786, 21.781612)
 scale = Vector2(1.0124087, 1.0499053)
 autoplay = "default"
 frame_progress = 0.84899795
 
-[node name="malin_remaja" parent="." unique_id=217989011 instance=ExtResource("6_hhi3k")]
-position = Vector2(328, 627)
+[node name="malin_remaja" parent="." unique_id=217989011 instance=ExtResource("6_6p86r")]
+visible = false
+position = Vector2(342, 628)
+script = ExtResource("8_eu42w")
+kunci_dialog = "dialogue"
 
-[node name="Ibu" parent="." unique_id=615855255 instance=ExtResource("7_3yivd")]
-position = Vector2(307, 626)
+[node name="Player" parent="." unique_id=674275362 instance=ExtResource("8_887gb")]
+position = Vector2(276, 497)
+script = ExtResource("11_6p86r")
 
-[node name="CharacterBody2D" parent="." unique_id=674275362 instance=ExtResource("8_sey7p")]
-position = Vector2(55, 627)
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1329646947]
-position = Vector2(10, -21)
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1094241347]
+position = Vector2(12, -52)
 zoom = Vector2(5, 5)
-limit_left = 0
-limit_top = 495
-limit_right = 491
-limit_bottom = 651
+limit_left = 180
+limit_top = 299
+limit_right = 737
+limit_bottom = 526
+
+[node name="Dialog" type="CanvasLayer" parent="." unique_id=285195627]
+visible = false
+
+[node name="KotakDialog" type="Control" parent="Dialog" unique_id=429524166]
+unique_name_in_owner = true
+layout_mode = 3
+anchor_left = -0.09288195
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 107.0
+offset_top = -8.0
+offset_right = 107.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Potret" type="TextureRect" parent="Dialog/KotakDialog" unique_id=1121429613]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+offset_transform_enabled = true
+offset_transform_position = Vector2(20.27, 520)
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Gambar Ibu" type="Sprite2D" parent="Dialog/KotakDialog/Potret" unique_id=1114252045]
+position = Vector2(547, -178)
+
+[node name="Kotak" type="Panel" parent="Dialog/KotakDialog" unique_id=1814929818]
+layout_mode = 0
+offset_top = 379.0
+offset_right = 1155.0
+offset_bottom = 647.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Teks" type="Label" parent="Dialog/KotakDialog/Kotak" unique_id=1879728339]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 157.0
+theme_override_font_sizes/font_size = 35
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Ibu" parent="." unique_id=615855255 instance=ExtResource("7_qut3p")]
+position = Vector2(460, 494)
+script = ExtResource("8_eu42w")
+kunci_dialog = "dialogue"

@@ -52,7 +52,7 @@ const FILE_DIALOG := "res://data/dialog_scene1.json"
 @export_group("Potret")
 # Folder gambar potret visual novel. Isi kolom "potret" di JSON dengan NAMA FILE
 # tanpa .png (contoh: "ibu_tertawa").
-@export_dir var folder_potret: String = "res://assets/Visual Novel Char/"
+@export_dir var folder_potret: String = "res://assets/Visual Novel Char/scene_1"
 
 @onready var kotak_dialog = %KotakDialog
 @onready var teks = %Teks

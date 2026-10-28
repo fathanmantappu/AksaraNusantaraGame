@@ -2,7 +2,7 @@ extends Node2D
 # Pasang script ini di NPC / benda yang boleh diketuk (Ibu, Malin Kecil, Tungku).
 # Script ini otomatis membuat "stiker peka sentuh" (Area2D) seukuran gambarnya.
 
-const Badan = preload("res://scene_1/badan.gd")
+const Badan = preload("res://shared/badan.gd")
 
 signal diketuk(kunci: String, objek: Node2D)
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bouc3q1vdma6m"
-path="res://.godot/imported/malin_haru-removebg-preview.png-56a007b72632cfce5303503616679fab.ctex"
+uid="uid://domxt72274pgu"
+path="res://.godot/imported/ibu_sedih.png-c81e2592078b726832b6505deb669969.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Visual Novel Char/scene_2/malin_haru-removebg-preview.png"
-dest_files=["res://.godot/imported/malin_haru-removebg-preview.png-56a007b72632cfce5303503616679fab.ctex"]
+source_file="res://assets/Visual Novel Char/scene_2/ibu_sedih.png"
+dest_files=["res://.godot/imported/ibu_sedih.png-c81e2592078b726832b6505deb669969.ctex"]
 
 [params]
 

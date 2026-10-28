@@ -1,6 +1,6 @@
 extends Node2D
 
-const Badan = preload("res://scene_1/badan.gd")
+const Badan = preload("res://shared/badan.gd")
 
 const SPEED = 50.0
 

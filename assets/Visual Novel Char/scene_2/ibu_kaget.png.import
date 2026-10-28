@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cub312dke05yo"
-path="res://.godot/imported/ibu_harap-removebg-preview.png-f44c1ef00ad9ab8b76a7ab52f5aef954.ctex"
+uid="uid://bk5uy5oacvmom"
+path="res://.godot/imported/ibu_kaget.png-3db103a78cc3a2dd5aa6ed00c326ffa5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Visual Novel Char/scene_2/ibu_harap-removebg-preview.png"
-dest_files=["res://.godot/imported/ibu_harap-removebg-preview.png-f44c1ef00ad9ab8b76a7ab52f5aef954.ctex"]
+source_file="res://assets/Visual Novel Char/scene_2/ibu_kaget.png"
+dest_files=["res://.godot/imported/ibu_kaget.png-3db103a78cc3a2dd5aa6ed00c326ffa5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk5uy5oacvmom"
-path="res://.godot/imported/ibu_kaget-removebg-preview.png-25e46c9b6e633ff0c961c75ce7897fad.ctex"
+uid="uid://ceuyaxwbycw0x"
+path="res://.godot/imported/malin_semangat.png-8081d89621fbbf5f320646dc7dae6745.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Visual Novel Char/scene_2/ibu_kaget-removebg-preview.png"
-dest_files=["res://.godot/imported/ibu_kaget-removebg-preview.png-25e46c9b6e633ff0c961c75ce7897fad.ctex"]
+source_file="res://assets/Visual Novel Char/scene_2/malin_semangat.png"
+dest_files=["res://.godot/imported/malin_semangat.png-8081d89621fbbf5f320646dc7dae6745.ctex"]
 
 [params]
 

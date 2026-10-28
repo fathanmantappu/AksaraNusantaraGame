@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://domxt72274pgu"
-path="res://.godot/imported/ibu_sedih-removebg-preview.png-fc51896f848eabf4244ea7ffa0cbf47a.ctex"
+uid="uid://dmsgmrhuc0tk3"
+path="res://.godot/imported/ibu_harap.png-59e2885ea09e9ceef3b608137fedbced.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Visual Novel Char/scene_2/ibu_sedih-removebg-preview.png"
-dest_files=["res://.godot/imported/ibu_sedih-removebg-preview.png-fc51896f848eabf4244ea7ffa0cbf47a.ctex"]
+source_file="res://assets/Visual Novel Char/scene_2/ibu_harap.png"
+dest_files=["res://.godot/imported/ibu_harap.png-59e2885ea09e9ceef3b608137fedbced.ctex"]
 
 [params]
 
